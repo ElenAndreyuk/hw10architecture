@@ -1,6 +1,6 @@
-﻿namespace WebApplication10.Models
+﻿namespace WebApplication10.Models.Requests
 {
-    public class Consultation
+    public class UpdateConsultationRequest
     {
         public int ConsultationId { get; set; }
 

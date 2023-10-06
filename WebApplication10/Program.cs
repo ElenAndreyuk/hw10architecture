@@ -1,5 +1,7 @@
 
 using Microsoft.Data.Sqlite;
+using WebApplication10.Services.Impl;
+using WebApplication10.Services;
 
 namespace WebApplication10
 {
@@ -7,10 +9,13 @@ namespace WebApplication10
     {
         public static void Main(string[] args)
         {
-            ConfigureSqlLiteConnection();
+            // ConfigureSqlLiteConnection();
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddScoped<IClientRepository, ClientRepository>();
+            builder.Services.AddScoped<IPetRepository, PetRepository>();
+            builder.Services.AddScoped<IConsultationRepository, ConsultationRepository>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

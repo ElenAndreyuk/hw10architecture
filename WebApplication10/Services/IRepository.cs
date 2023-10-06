@@ -1,6 +1,16 @@
-﻿namespace WebApplication10.Services
+﻿using WebApplication10.Models;
+
+namespace WebApplication10.Services
 {
-    public interface IRepository
+    public interface IRepository<T, TId>
     {
+        int Create(T item);
+        int Update(T item);
+        int Delete(TId id);
+        T GetById(TId id);
+        List<T> GetAll();
+        
+      
+
     }
 }

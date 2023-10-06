@@ -1,6 +1,8 @@
-﻿namespace WebApplication10.Services
+﻿using WebApplication10.Models;
+
+namespace WebApplication10.Services
 {
-    public interface IConsultationRepository
+    public interface IConsultationRepository : IRepository<Consultation, int>
     {
     }
 }

@@ -1,8 +1,7 @@
-﻿namespace WebApplication10.Models
+﻿namespace WebApplication10.Models.Requests
 {
-    public class Consultation
+    public class CreateConsultationRequest
     {
-        public int ConsultationId { get; set; }
 
         public int ClientId { get; set; }
 

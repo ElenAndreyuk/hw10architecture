@@ -1,10 +1,11 @@
-﻿namespace WebApplication10.Models
+﻿namespace WebApplication10.Models.Requests
 {
-    public class Pet
-    {
+    public class UpdatePetRequest
+    { 
         public int PetId { get; set; }
-
+ 
         public int ClientId { get; set; }
+        
 
         public string Name { get; set; }
 
