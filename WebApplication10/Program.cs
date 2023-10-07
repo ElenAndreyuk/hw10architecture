@@ -76,7 +76,7 @@ namespace WebApplication10
                @"CREATE TABLE Consultations(
                 ConsultationId INTEGER PRIMARY KEY, 
                 ClientId INTEGER,
-                PetId INTEGER 
+                PetId INTEGER ,
                 ConsultationDate INTEGER,
                 Description TEXT)";
             sqliteCommand.ExecuteNonQuery();
